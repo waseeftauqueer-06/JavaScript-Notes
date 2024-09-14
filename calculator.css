@@ -1,0 +1,62 @@
+/* Basic styling for the calculator container */
+#calculator {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 50px auto;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Styling for the display input */
+#display {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.5em;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e9ecef;
+}
+
+/* Styling for the keys */
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Styling for the individual buttons */
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c757d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #495057;
+}
+
+/* Special styling for the clear button and the equals button */
+button:nth-child(17) { /* Clear button */
+    background-color: #e63946;
+}
+
+button:nth-child(16) { /* Equals button */
+    background-color: #457b9d;
+}
+
+button:nth-child(16):hover, 
+button:nth-child(17):hover {
+    background-color: #2b2d42;
+}
